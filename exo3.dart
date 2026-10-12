@@ -9,3 +9,8 @@ class Compte{
     }
   }
 }
+void main(){
+  var monCompte= Compte('CA-300156',500.0);
+  print('Numero de compte:'${monCompte.numeroCompte});
+  print('solde:'${monCompte.solde});
+}
