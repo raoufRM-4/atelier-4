@@ -5,4 +5,10 @@ abstract class Forme{
     print("calcul de laire...");
   }
 }
-class Cercle
+class Cercle extends Forme{
+  final double rayon;
+  @override
+  double calculerAire(){
+    return pi*rayon*rayon;
+  }
+}
