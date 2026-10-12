@@ -5,3 +5,8 @@ class Media {
     print ("Ceci est un média générique");
   }
 }
+
+class Film extends Media{
+  final int dureeMinutes;
+  const Film(String titres,this.dureeMinutes): super(titres);
+}
