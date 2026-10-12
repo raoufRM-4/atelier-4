@@ -9,4 +9,5 @@ void main(){
   var tache1=Tache("apprendre dart");
   var tache2=Tache("faire le project");
   var tache3=Tache("pousser le code sur github");
+  print("nombre total de taches crees:${Tache.nombreTotal}");
 }
