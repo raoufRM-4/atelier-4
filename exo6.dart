@@ -7,5 +7,8 @@ class ServeurAPI implements Comparable{
   void connecter(String utilisateur){
     print("ServerAPI:connection reussit pour $utilisateur");
   }
-  
+  @override
+  void deconnecter(){
+    print("ServeurAPI:deconection reussit");
+  }
 }
