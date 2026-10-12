@@ -22,3 +22,13 @@ class Film extends Media{
     print("Ceci est un Film : $titres ($dureeMinutes minutes)");
   }
 }
+void main(){
+  List<Media>catalogue=[
+    Livre("petit prince", "arther morgan"),
+    Film("last of us", 128),
+    Livre("zero point", "jason laval"),
+  ];
+for(var Media in catalogue){
+  Media.afficherType();
+  }
+}
