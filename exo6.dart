@@ -12,3 +12,13 @@ class ServeurAPI implements Comparable{
     print("ServeurAPI:deconection reussit");
   }
 }
+class BaseDeDonnes implements Comparable{
+  @override
+  void connecter(String utilisateur){
+    print("Basededonnes:acces autorise pour $utilisateur");
+  }
+  @override
+  void deconection(){
+    print("Basededonnes:session terminer ");
+  }
+}
