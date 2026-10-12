@@ -11,6 +11,8 @@ class Compte{
 }
 void main(){
   var monCompte= Compte('CA-300156',500.0);
-  print('Numero de compte:'${monCompte.numeroCompte});
-  print('solde:'${monCompte.solde});
+  print('Numero de compte:${monCompte.numeroCompte}');
+  print('solde:${monCompte.solde}');
+  monCompte.depot(1000.0);
+  print('solde apres depot:${monCompte.solde}');
 }
