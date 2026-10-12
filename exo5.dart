@@ -12,3 +12,12 @@ class Cercle extends Forme{
     return pi*rayon*rayon;
   }
 }
+class Rectangle extends Forme{
+  final double longeur;
+  final double largeur;
+  Rectangle(this.longeur,this.largeur);
+  @override
+  double calculerAire(){
+    return longeur*largeur;
+  }
+}
