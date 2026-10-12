@@ -2,7 +2,7 @@ class Connectale{
   void connecter(String utilisateur){}
   void deconnecter(){}
 }
-class ServeurAPI implements Comparable{
+class ServeurAPI implements Connectale{
   @override
   void connecter(String utilisateur){
     print("ServerAPI:connection reussit pour $utilisateur");
@@ -12,13 +12,24 @@ class ServeurAPI implements Comparable{
     print("ServeurAPI:deconection reussit");
   }
 }
-class BaseDeDonnes implements Comparable{
+class BaseDeDonnes implements Connectale{
   @override
   void connecter(String utilisateur){
     print("Basededonnes:acces autorise pour $utilisateur");
   }
   @override
-  void deconection(){
+  void deconnecter(){
     print("Basededonnes:session terminer ");
+  }
+}
+void main(){
+  List<Connectale>services=[
+    ServeurAPI(),
+    BaseDeDonnes(),
+  ];
+  for (var service in services){
+    service.connecter("raouf");
+    service.deconnecter();
+    print(".........");
   }
 }
